@@ -8,11 +8,7 @@ def is_prime?(number)
 end
 
 def prime_numbers(numbers)
-  prime_numbers = []
-  numbers.each do |number|
-    if is_prime?(number)
-      prime_numbers << number
-    end
+  numbers.select do |number|
+    is_prime?(number)
   end
-  prime_numbers
 end
