@@ -6,3 +6,13 @@ def is_prime?(number)
   end
   return true
 end
+
+def prime_numbers(numbers)
+  prime_numbers = []
+  numbers.each do |number|
+    if is_prime?(number)
+      prime_numbers << number
+    end
+  end
+  prime_numbers
+end
